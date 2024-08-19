@@ -259,30 +259,32 @@
         </div>
       </div>
     </section>
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <section id="contact" class="bg-dark text-light">
+    <section id="contact" class="bg-dark text-light">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="c9819a81-6054-4464-8e5d-f3bf0165ab80"
+        />
         <div class="container">
           <div class="row">
             <div
               class="col-lg-6 d-flex align-items-center justify-content-center"
             >
-              <input
-                type="hidden"
-                name="access_key"
-                value="c9819a81-6054-4464-8e5d-f3bf0165ab80"
-              />
               <img
                 src="/images/hacker.webp"
                 class="img-fluid rounded"
                 width="400"
               />
             </div>
+
             <div class="col-lg-6">
               <div class="mb-3">
                 <label for="name" class="form-label fs-5">Name</label>
                 <input
                   type="text"
                   class="form-control"
+                  name="name"
                   placeholder="Enter Your Name"
                   required
                 />
@@ -293,6 +295,7 @@
                   id="formm"
                   type="email"
                   class="form-control"
+                  name="email"
                   placeholder="Enter Your Email"
                   required
                 />
@@ -312,8 +315,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </form>
+      </form>
+    </section>
     <footer class="text-center bg-body-tertiary" style="height: 100px">
       <!-- Grid container -->
       <div class="container pt-4">
@@ -363,19 +366,5 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "gym25082008@gmail.com",
-          Password: "Atul",
-          To: "iatulll2002@gmail.com",
-          From: document.getElementById("formm").value,
-          Subject: "Enquiry",
-          Body: "And this is the body",
-        }).then((message) => alert(message));
-      }
-    </script> -->
   </body>
 </html>
